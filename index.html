@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>🎆</title>
+    <style>
+      body {
+          display: flex;
+          justify-content: center;
+      }
+
+      p {
+          font-family: "Brush Script MT";
+          font-size: 200px;
+      }
+
+      .miracle {
+          position: absolute;
+      }
+      .miracle:nth-child(1){
+          animation-name: fade;
+          animation-fill-mode: both;
+          animation-iteration-count: infinite;
+          animation-duration: 1s;
+          animation-direction: alternate-reverse;
+      }
+
+
+      .miracle:nth-child(2){
+          animation-name: fade;
+          animation-fill-mode: both;
+          animation-iteration-count: infinite;
+          animation-duration: 1s;
+          animation-direction: alternate;
+      }
+
+      @keyframes fade{
+          0%,50% {
+              opacity: 0;
+          }
+          100%{
+              opacity: 1;
+          }
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <p>201<span class="miracle">J</span><span class="miracle">9</span></p>
+    </div>
+</html>
