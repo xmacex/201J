@@ -5,6 +5,10 @@
     <title>🎆</title>
     <style>
       body {
+      }
+
+      div {
+          align-items: center;
           display: flex;
           justify-content: center;
       }
@@ -16,18 +20,14 @@
           text-shadow: beige 10px 60px;
       }
 
-      .miracle {
-          position: absolute;
-      }
       .miracle:nth-child(1){
           animation-name: fade;
           animation-fill-mode: both;
           animation-iteration-count: infinite;
           animation-duration: 1s;
           animation-direction: alternate-reverse;
+          position: absolute;
       }
-
-
       .miracle:nth-child(2){
           animation-name: fade;
           animation-fill-mode: both;
@@ -46,8 +46,10 @@
       }
     </style>
   </head>
+
   <body>
     <div>
       <p>201<span class="miracle">J</span><span class="miracle">9</span></p>
     </div>
+  </body>
 </html>
